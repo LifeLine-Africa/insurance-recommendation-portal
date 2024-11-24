@@ -63,7 +63,7 @@ const PersonalInformationsPage = () => {
         {/* Title */}
         <Typography
           variant="h5"
-          sx={{ textAlign: "left" ,fontWeight: "600", fontSize: "28px", margin: "30px", color: "#000" }}
+          sx={{ textAlign: "left" ,fontWeight: "600", fontSize: "24px", margin: "30px", color: "#000" }}
         >
           Personal Informations
         </Typography>
@@ -76,7 +76,7 @@ const PersonalInformationsPage = () => {
             display: "flex",
             flexDirection: "column",
             gap: "20px",
-            marginBottom: "20px",
+            marginBottom: "40px",
             //marginTop: "30px",
           }}
         >
