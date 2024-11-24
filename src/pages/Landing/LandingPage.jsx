@@ -46,7 +46,7 @@ const LandingPage = () => {
             height: "auto",
             maxHeight: "300px",
             borderRadius: "10px",
-            marginBottom: "50px" }}
+            marginBottom: "20px" }}
         />
         <Typography
           variant="h4"
