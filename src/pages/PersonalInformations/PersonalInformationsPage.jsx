@@ -148,6 +148,7 @@ const PersonalInformationsPage = () => {
             bottom: "20px",
             right: "20px",
             cursor: "pointer",
+            marginTop: "20px",
           }}
           onClick={handleNext}
         >
