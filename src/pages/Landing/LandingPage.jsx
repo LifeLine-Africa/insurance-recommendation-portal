@@ -16,7 +16,7 @@ const LandingPage = () => {
         alignItems: "center",
         justifyContent: "space-between",
         minHeight: "100vh",
-        //padding: "38px",
+        padding: "38px",
         backgroundColor: "#ffffff",
         fontFamily: "Poppins, sans-serif",
       }}
