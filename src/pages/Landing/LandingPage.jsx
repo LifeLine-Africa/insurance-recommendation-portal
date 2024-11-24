@@ -36,9 +36,6 @@ const LandingPage = () => {
           textAlign: "center",
           maxWidth: "400px",
           marginBottom: "20px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "20px",
         }}
       >
         <img
@@ -61,7 +58,7 @@ const LandingPage = () => {
         >
           Find Your Perfect Insurance Match in Minutes
         </Typography>
-        <Typography variant="body1" sx={{ color: "#000", fontSize: "24px", marginBottom: "10px" }}>
+        <Typography variant="body1" sx={{ color: "#000", fontSize: "24px" }}>
           Get personalized insurance recommendations based on your health needs
           and budget.
         </Typography>
