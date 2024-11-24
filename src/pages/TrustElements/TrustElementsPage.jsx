@@ -64,13 +64,13 @@ const TrustElementsPage = () => {
           marginBottom: "50px",
         }}
       >
-        <Typography variant="body1" sx={{ color: "#000", fontSize: "24px" }}>
-          Trusted by <Typography component="span" sx={{ fontWeight: "bold", color: "#FF9800", fontSize: "24px" }}>1000+</Typography> users
+        <Typography variant="body1" sx={{ color: "#000", fontSize: "20px" }}>
+          Trusted by <Typography component="span" sx={{ fontWeight: "bold", color: "#FF9800", fontSize: "20px" }}>1000+</Typography> users
         </Typography>
-        <Typography variant="body1" sx={{ color: "#000", fontSize: "24px" }}>
-          <Typography component="span" sx={{ fontWeight: "bold", color: "#FF9800", fontSize: "24px" }}>8</Typography> leading insurance providers
+        <Typography variant="body1" sx={{ color: "#000", fontSize: "20px" }}>
+          <Typography component="span" sx={{ fontWeight: "bold", color: "#FF9800", fontSize: "20px" }}>8</Typography> leading insurance providers
         </Typography>
-        <Typography variant="body1" sx={{ color: "#000", fontSize: "24px" }}>
+        <Typography variant="body1" sx={{ color: "#000", fontSize: "20px" }}>
           Data protected & confidential
         </Typography>
       </Box>
