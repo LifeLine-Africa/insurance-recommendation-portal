@@ -46,7 +46,7 @@ const TrustElementsPage = () => {
         align="center"
         sx={{
           fontWeight: "600",
-          fontSize: "34px",
+          fontSize: "30px",
           marginBottom: "16px",
           color: "#000",
         }}

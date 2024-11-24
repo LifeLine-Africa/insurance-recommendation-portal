@@ -52,8 +52,8 @@ const KeyBenefits = () => {
         variant="h5"
         sx={{
           fontWeight: "600",
-          fontSize: "34px",
-          marginTop: "50px",
+          fontSize: "30px",
+          marginTop: "20px",
           color: "#000",
         }}
       >
@@ -68,7 +68,7 @@ const KeyBenefits = () => {
           gap: "40px",
           width: "100%",
           maxWidth: "400px",
-          marginBottom: "50px",
+          marginBottom: "80px",
         }}
       >
         {benefits.map((benefit, index) => (
@@ -86,13 +86,13 @@ const KeyBenefits = () => {
                 variant="h6"
                 sx={{
                   fontWeight: "600",
-                  fontSize: "24px",
+                  fontSize: "20px",
                   color: "#000",
                 }}
               >
                 {benefit.title}
               </Typography>
-              <Typography variant="body2" sx={{ fontSize: "20px", color: "#000" }}>
+              <Typography variant="body2" sx={{ fontSize: "18px", color: "#000" }}>
                 {benefit.description}
               </Typography>
             </Box>

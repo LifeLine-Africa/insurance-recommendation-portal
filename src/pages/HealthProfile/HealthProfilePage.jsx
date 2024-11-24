@@ -66,7 +66,7 @@ const HealthProfilePage = () => {
       {/* Title */}
       <Typography
         variant="h5"
-        sx={{ fontWeight: "600", fontSize: "34px", color: "#000" }}
+        sx={{ fontWeight: "600", fontSize: "30px", color: "#000" }}
       >
         Health Profile
       </Typography>

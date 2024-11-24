@@ -16,6 +16,7 @@ const AdditionalFactorsPage = () => {
       maternityCoverage: "",
       servicesPriority: "",
       healthcareMode: "",
+      specifyCondition: "",
     });
   
     const [errors, setErrors] = useState({});
@@ -33,6 +34,12 @@ const AdditionalFactorsPage = () => {
       if (!formData.maternityCoverage) newErrors.maternityCoverage = "Field left empty";
       if (!formData.servicesPriority) newErrors.servicesPriority = "Field left empty";
       if (!formData.healthcareMode) newErrors.healthcareMode = "Field left empty";
+      if (
+        formData.medicalConditions === "Other" &&
+        !formData.specifyCondition.trim()
+      ) {
+        newErrors.specifyCondition = "Please specify your condition";
+      }
   
       setErrors(newErrors);
   
@@ -60,7 +67,7 @@ const AdditionalFactorsPage = () => {
         {/* Title */}
         <Typography
           variant="h5"
-          sx={{ fontWeight: "600", fontSize: "34px", color: "#000" }}
+          sx={{ fontWeight: "600", fontSize: "30px", color: "#000" }}
         >
           Additional Factors
         </Typography>
@@ -84,6 +91,19 @@ const AdditionalFactorsPage = () => {
             onChange={(e) => handleInputChange("currentInsurance", e.target.value)}
             error={errors.currentInsurance}
           />
+
+          {/* Show the input box when "Other" is selected */}
+        {formData.currentInsurance === "Other" && (
+          <InputField
+            label="Please Specify"
+            placeholder="Describe your condition"
+            value={formData.specifyCondition}
+            onChange={(e) =>
+              handleInputChange("specifyCondition", e.target.value)
+            }
+            error={errors.specifyCondition}
+          />
+        )}
       
           {/* Past Insurance Claims Experience Input */}
           <InputField

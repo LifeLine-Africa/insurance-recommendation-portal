@@ -10,7 +10,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const PersonalInformationsPage = () => {
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
+      name: "",
       age: "",
+      phoneNumber: "",
       location: "",
       occupation: "",
       incomeRange: "",
@@ -27,7 +29,9 @@ const PersonalInformationsPage = () => {
       const newErrors = {};
   
       // Basic form validation
+      if (!formData.name) newErrors.name = "Field left empty";
       if (!formData.age) newErrors.age = "Field left empty";
+      if (!formData.phoneNumber) newErrors.phoneNumber = "Field left empty";
       if (!formData.location) newErrors.location = "Field left empty";
       if (!formData.occupation) newErrors.occupation = "Field left empty";
       if (!formData.incomeRange) newErrors.incomeRange = "Field left empty";
@@ -59,7 +63,7 @@ const PersonalInformationsPage = () => {
         {/* Title */}
         <Typography
           variant="h5"
-          sx={{ fontWeight: "600", fontSize: "34px", color: "#000" }}
+          sx={{ fontWeight: "600", fontSize: "30px", margin: "30px", color: "#000" }}
         >
           Personal Informations
         </Typography>
@@ -72,15 +76,32 @@ const PersonalInformationsPage = () => {
             display: "flex",
             flexDirection: "column",
             gap: "20px",
-            marginBottom: "40px",
+            marginBottom: "20px",
+            marginTop: "30px",
           }}
         >
+          {/* Name Input */}
+          <InputField
+            label="Full Name"
+            value={formData.name}
+            onChange={(e) => handleInputChange("name", e.target.value)}
+            error={errors.name}
+          />
+          
           {/* Age Input */}
           <InputField
             label="Age"
             value={formData.age}
             onChange={(e) => handleInputChange("age", e.target.value)}
             error={errors.age}
+          />
+
+          {/* Phone Number Input */}
+          <InputField
+            label="Phone Number"
+            value={formData.phoneNumber}
+            onChange={(e) => handleInputChange("phoneNumber", e.target.value)}
+            error={errors.phoneNumber}
           />
       
           {/* Location Input */}

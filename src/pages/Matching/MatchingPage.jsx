@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 const MatchingPage = () => {
   const recommendations = [
     {
-      logo: "/assets/images/RSSB.png", // Replace with the actual logo URL or path
+      logo: "/assets/images/RSSB.png",
       name: "RSSB",
       description: "Premium Health Plan",
       price: "25,000 RWF/month",
@@ -14,7 +14,7 @@ const MatchingPage = () => {
       link: "https://www.rssb.rw/scheme/medical-scheme",
     },
     {
-      logo: "/assets/images/Prime.png", // Replace with the actual logo URL or path
+      logo: "/assets/images/Prime.png",
       name: "Prime",
       description: "Premium Health Plan",
       price: "18,000 RWF/month",
@@ -22,7 +22,7 @@ const MatchingPage = () => {
       link: "https://prime.rw/",
     },
     {
-      logo: "/assets/images/EdenCare.png", // Replace with the actual logo URL or path
+      logo: "/assets/images/EdenCare.png",
       name: "Eden Care",
       description: "Premium Health Plan",
       price: "22,000 RWF/month",
@@ -64,71 +64,80 @@ const MatchingPage = () => {
       </Box>
 
       {/* Best Match Section */}
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "8px",
-          maxWidth: "400px",
-        }}
-      >
+      <Box sx={{ width: "100%", maxWidth: "450px" }}>
         <Typography
           variant="h6"
-          sx={{ fontWeight: "600", fontSize: "20px", color: "#000", textAlign: "center" }}
+          sx={{
+            fontWeight: "600",
+            fontSize: "20px",
+            color: "#000",
+            marginBottom: "16px",
+            textAlign: "center",
+          }}
         >
           Best Match
         </Typography>
 
         <Box
           sx={{
-            position: "relative",
-            width: "100%",
-            backgroundColor: "#fff",
-            borderRadius: "10px",
-            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-            padding: "20px",
             display: "flex",
+            flexDirection: "row",
             alignItems: "center",
-            justifyContent: "space-between",
+            padding: "10px",
+            border: "1px solid #ddd",
+            borderRadius: "8px",
+            marginBottom: "20px",
+            backgroundColor: "#ffffff",
+            //boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
           }}
         >
-          {/* Content Section */}
-          <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            {/* Logo */}
+          {/* Logo Section */}
+          <Box
+            sx={{
+              width: "40px",
+              height: "40px",
+              marginRight: "10px",
+            }}
+          >
             <img
-              src="/assets/images/RSSB.png" // Replace with the actual path to your logo
+              src="/assets/images/RSSB.png"
               alt="RSSB Logo"
               style={{
-                width: "40px",
-                height: "40px",
+                width: "100%",
+                height: "100%",
                 borderRadius: "50%",
                 objectFit: "cover",
               }}
             />
-
-            {/* Text Content */}
-            <Box>
-              <Typography variant="h6" sx={{ fontWeight: "600", fontSize: "18px", color: "#000" }}>
-                RSSB
-              </Typography>
-              <Typography sx={{ fontSize: "14px", color: "#666" }}>
-                Premium Health Plan
-              </Typography>
-              <Typography sx={{ fontSize: "16px", color: "#000", marginTop: "10px" }}>
-                Based on your needs: family coverage, dental care, and preferred hospitals.
-              </Typography>
-            </Box>
           </Box>
 
-          {/* "Get Started" Button */}
+          {/* Text Section */}
+          <Box sx={{ flex: "1" }}>
+            <Typography sx={{ fontWeight: "600", fontSize: "18px", color: "#000" }}>
+              RSSB
+            </Typography>
+            <Typography sx={{ fontSize: "16px", color: "#666" }}>
+              Premium Health Plan
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "16px",
+                color: "#000",
+                marginTop: "4px",
+              }}
+            >
+              Based on your needs: family coverage, dental care, and preferred hospitals.
+            </Typography>
+          </Box>
+
+          {/* Button Section */}
           <Button
             variant="contained"
             sx={{
               backgroundColor: "#FBAE24",
               color: "#fff",
-              padding: "10px 30px",
-              fontSize: "12px",
+              padding: "6px 12px",
+              fontSize: "14px",
               borderRadius: "20px",
               textTransform: "none",
               whiteSpace: "nowrap",
