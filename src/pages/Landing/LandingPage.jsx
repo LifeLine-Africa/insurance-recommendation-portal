@@ -16,7 +16,7 @@ const LandingPage = () => {
         alignItems: "center",
         justifyContent: "space-between",
         minHeight: "100vh",
-        padding: "38px",
+        //padding: "38px",
         backgroundColor: "#ffffff",
         fontFamily: "Poppins, sans-serif",
       }}
@@ -35,7 +35,10 @@ const LandingPage = () => {
         sx={{
           textAlign: "center",
           maxWidth: "400px",
-          marginBottom: "20px", // Reduce white space
+          marginBottom: "20px",
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
         }}
       >
         <img
@@ -46,7 +49,7 @@ const LandingPage = () => {
             height: "auto",
             maxHeight: "300px",
             borderRadius: "10px",
-            marginBottom: "20px" }}
+            marginBottom: "50px" }}
         />
         <Typography
           variant="h4"
@@ -58,7 +61,7 @@ const LandingPage = () => {
         >
           Find Your Perfect Insurance Match in Minutes
         </Typography>
-        <Typography variant="body1" sx={{ color: "#000", fontSize: "24px" }}>
+        <Typography variant="body1" sx={{ color: "#000", fontSize: "24px", marginBottom: "10px" }}>
           Get personalized insurance recommendations based on your health needs
           and budget.
         </Typography>
