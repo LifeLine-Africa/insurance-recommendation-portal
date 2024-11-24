@@ -59,7 +59,7 @@ const InsurancePreferencesPage = () => {
         {/* Title */}
         <Typography
           variant="h5"
-          sx={{ fontWeight: "600", fontSize: "30px", color: "#000" }}
+          sx={{ fontWeight: "600", fontSize: "24px", margin:"30px", color: "#000" }}
         >
           Insurance Preferences
         </Typography>

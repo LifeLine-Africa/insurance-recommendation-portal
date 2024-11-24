@@ -67,7 +67,7 @@ const AdditionalFactorsPage = () => {
         {/* Title */}
         <Typography
           variant="h5"
-          sx={{ fontWeight: "600", fontSize: "30px", color: "#000" }}
+          sx={{ fontWeight: "600", fontSize: "24px", margin:"30px", color: "#000" }}
         >
           Additional Factors
         </Typography>
@@ -80,7 +80,7 @@ const AdditionalFactorsPage = () => {
             display: "flex",
             flexDirection: "column",
             gap: "20px",
-            marginBottom: "40px",
+            //marginBottom: "40px",
           }}
         >
           {/* Current Insurance Dropdown */}
@@ -146,7 +146,7 @@ const AdditionalFactorsPage = () => {
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          marginTop: "20px",
+          //marginTop: "20px",
         }}
       >
         <CustomButton

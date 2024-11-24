@@ -82,21 +82,24 @@ const MatchingPage = () => {
           sx={{
             display: "flex",
             flexDirection: "row",
-            alignItems: "center",
+            alignItems: "flex-start",
             padding: "10px",
             border: "1px solid #ddd",
             borderRadius: "8px",
             marginBottom: "20px",
             backgroundColor: "#ffffff",
+            gap: "10px",
             //boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
           }}
         >
           {/* Logo Section */}
           <Box
             sx={{
+              flexShrink: 0,
               width: "40px",
               height: "40px",
               marginRight: "10px",
+              marginBottom: "10px",
             }}
           >
             <img
@@ -111,8 +114,9 @@ const MatchingPage = () => {
             />
           </Box>
 
-          {/* Text Section */}
-          <Box sx={{ flex: "1" }}>
+          {/* Text and Button Section */}
+          <Box sx={{ flex: 1, display: "flex", flexDirection: "column", gap: "2px" }}>
+            {/* Text Section */}
             <Typography sx={{ fontWeight: "600", fontSize: "18px", color: "#000" }}>
               RSSB
             </Typography>
@@ -122,31 +126,35 @@ const MatchingPage = () => {
             <Typography
               sx={{
                 fontSize: "16px",
+                fontWeight: "500",
                 color: "#000",
-                marginTop: "4px",
               }}
             >
               Based on your needs: family coverage, dental care, and preferred hospitals.
             </Typography>
-          </Box>
 
-          {/* Button Section */}
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "#FBAE24",
-              color: "#fff",
-              padding: "6px 12px",
-              fontSize: "14px",
-              borderRadius: "20px",
-              textTransform: "none",
-              whiteSpace: "nowrap",
-              "&:hover": { backgroundColor: "#FBA50B" },
-            }}
-            onClick={() => window.open("https://www.rssb.rw/scheme/medical-scheme", "_blank")}
-          >
-            Get Started →
-          </Button>
+            {/* Button Section */}
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "#FBAE24",
+                color: "#fff",
+                padding: "6px 12px",
+                fontSize: "14px",
+                borderRadius: "20px",
+                textTransform: "none",
+                whiteSpace: "nowrap",
+                marginTop: "10px",
+                alignSelf: "stretch",
+                "&:hover": { backgroundColor: "#FBA50B" },
+              }}
+              onClick={() =>
+                window.open("https://www.rssb.rw/scheme/medical-scheme", "_blank")
+              }
+            >
+              Get Started →
+            </Button>
+          </Box>
         </Box>
       </Box>
 
