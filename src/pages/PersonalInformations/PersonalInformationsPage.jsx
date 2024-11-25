@@ -92,16 +92,18 @@ const PersonalInformationsPage = () => {
           <InputField
             label="Age"
             value={formData.age}
-            onChange={(e) => handleInputChange("age", e.target.value)}
+            onChange={(e) => handleInputChange("age", e.target.value.replace(/\D/g, ""))}
             error={errors.age}
+            type="number"
           />
 
           {/* Phone Number Input */}
           <InputField
             label="Phone Number"
             value={formData.phoneNumber}
-            onChange={(e) => handleInputChange("phoneNumber", e.target.value)}
+            onChange={(e) => handleInputChange("phoneNumber", e.target.value.replace(/\D/g, ""))}
             error={errors.phoneNumber}
+            type="number"
           />
       
           {/* Location Input */}
@@ -133,8 +135,9 @@ const PersonalInformationsPage = () => {
           <InputField
             label="Number Of Dependents"
             value={formData.dependents}
-            onChange={(e) => handleInputChange("dependents", e.target.value)}
+            onChange={(e) => handleInputChange("dependents", e.target.value.replace(/\D/g, ""))}
             error={errors.dependents}
+            type="number"
           />
         </Box>
       

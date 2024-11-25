@@ -26,16 +26,19 @@ const LandingPage = () => {
         <img
           src="/assets/images/logo.svg"
           alt="LifeLine Logo"
-          style={{ width: "180px" /*marginTop: "50px", marginBottom: "10px"*/ }}
+          style={{ width: "180px", marginBottom: "20px" }}
         />
       </Box>
 
       {/* Content Section */}
       <Box
         sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "30px",
           textAlign: "center",
           maxWidth: "400px",
-          marginBottom: "20px",
+          marginBottom: "90px",
         }}
       >
         <img
@@ -46,20 +49,20 @@ const LandingPage = () => {
             height: "auto",
             maxHeight: "300px",
             borderRadius: "10px",
-            marginBottom: "80px" }}
+            marginBottom: "50px" }}
         />
         <Typography
           variant="h4"
           sx={{
             fontWeight: "600",
             fontSize: "30px",
-            marginBottom: "40px",
+            //marginBottom: "40px",
             color: "#000",
           }}
         >
           Find Your Perfect Insurance Match in Minutes
         </Typography>
-        <Typography variant="body1" sx={{ color: "#000", fontSize: "18px" }}>
+        <Typography variant="body1" sx={{ color: "#000", fontSize: "18px", /*marginBottom: "50px"*/ }}>
           Get personalized insurance recommendations based on your health needs
           and budget.
         </Typography>
